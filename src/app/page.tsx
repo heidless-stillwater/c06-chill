@@ -42,7 +42,7 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto max-w-7xl text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold font-headline mb-4">
-            <span className="text-accent">Unlock</span> Your Potential, <span className="text-accent">Live</span> a <span className="text-accent">Chilled Life</span>
+            <span className="text-accent">Unlock</span> Your Potential, <span className="text-accent">Unlocked</span>, <span className="text-accent">Live</span> a <span className="text-accent">Chilled Life</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             We provide personalized coaching to help you overcome challenges, achieve your goals, and create a life you love.
