@@ -165,7 +165,7 @@ const testerServices = [
   {
     title: 'Life Balance Coaching',
     price: '$150/session',
-    icon: Scale,
+    icon: Sparkles,
     description: 'Feeling overwhelmed? This program helps you create harmony between your demanding career and personal life, reducing stress and increasing fulfillment.',
     features: ['Work-life integration strategies', 'Stress management techniques', 'Mindfulness and presence training', 'Personal values alignment'],
     href: '/services/life-balance-coaching'
