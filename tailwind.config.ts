@@ -16,6 +16,9 @@ export default {
       },
     },
     extend: {
+      screens: {
+        'nav-wide': '1000px',
+      },
       fontFamily: {
         body: ['Lato', 'sans-serif'],
         headline: ['Montserrat', 'sans-serif'],

@@ -63,7 +63,7 @@ export function Header() {
           <span className="font-bold text-[25px] font-headline">Chill Coaching</span>
         </Link>
         
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden nav-wide:flex items-center gap-6">
           {mainLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -128,14 +128,14 @@ export function Header() {
             </DropdownMenu>
         </nav>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden nav-wide:flex items-center gap-4">
             <ThemeToggle />
             <Button asChild className="font-bold text-[20px]">
               <Link href="/contact">Start Here</Link>
             </Button>
         </div>
 
-        <div className="lg:hidden flex items-center gap-2">
+        <div className="nav-wide:hidden flex items-center gap-2">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
