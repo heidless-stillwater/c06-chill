@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: 'Alex Johnson',
     title: 'Software Engineer',
-    quote: "Best Day Coaching transformed my approach to work. I'm more focused, less stressed, and my career is on an upward trajectory. The personalized intake was surprisingly accurate and set me on the right path from day one.",
+    quote: "Chill Coaching transformed my approach to work. I'm more focused, less stressed, and my career is on an upward trajectory. The personalized intake was surprisingly accurate and set me on the right path from day one.",
     avatar: 'AJ',
     image: 'https://placehold.co/100x100.png',
     aiHint: 'male professional'
@@ -13,7 +13,7 @@ const testimonials = [
   {
     name: 'Samantha Bee',
     title: 'Marketing Manager',
-    quote: 'I was feeling stuck and overwhelmed. The guidance I received helped me rediscover my passion and find a perfect work-life balance. It truly feels like I am living my best day, every day now.',
+    quote: 'I was feeling stuck and overwhelmed. The guidance I received helped me rediscover my passion and find a perfect work-life balance. It truly feels like I am living a chilled out life, every day now.',
     avatar: 'SB',
     image: 'https://placehold.co/100x100.png',
     aiHint: 'female professional'
@@ -45,7 +45,7 @@ const testimonials = [
   {
     name: 'Jessica Taylor',
     title: 'Human Resources',
-    quote: 'I recommend Best Day Coaching to all our senior staff. The impact on team morale and leadership effectiveness has been remarkable. A truly invaluable partner for our organization.',
+    quote: 'I recommend Chill Coaching to all our senior staff. The impact on team morale and leadership effectiveness has been remarkable. A truly invaluable partner for our organization.',
     avatar: 'JT',
     image: 'https://placehold.co/100x100.png',
     aiHint: 'professional woman'
