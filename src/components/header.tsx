@@ -60,7 +60,7 @@ export function Header() {
       <div className="container flex h-20 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Snowflake className="h-6 w-6 text-accent" />
-          <span className="font-bold text-[30px] font-headline">Chill Coaching</span>
+          <span className="font-bold text-[25px] font-headline">Chill Coaching</span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-6">
