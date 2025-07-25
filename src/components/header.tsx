@@ -4,7 +4,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Sun, Menu, ChevronDown } from 'lucide-react';
+import { Snowflake, Menu, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import {
@@ -59,11 +59,11 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Sun className="h-6 w-6 text-accent" />
-          <span className="font-bold text-[30px] font-headline">Best Day Coaching</span>
+          <Snowflake className="h-6 w-6 text-accent" />
+          <span className="font-bold text-[25px] font-headline">Chill Coaching</span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden nav-wide:flex items-center gap-6">
           {mainLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -128,14 +128,14 @@ export function Header() {
             </DropdownMenu>
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden nav-wide:flex items-center gap-4">
             <ThemeToggle />
             <Button asChild className="font-bold text-[20px]">
               <Link href="/contact">Start Here</Link>
             </Button>
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="nav-wide:hidden flex items-center gap-2">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
@@ -147,8 +147,8 @@ export function Header() {
                <SheetHeader className="p-6 border-b">
                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
                  <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-                    <Sun className="h-6 w-6 text-accent" />
-                    <span className="font-bold font-headline">Best Day Coaching</span>
+                    <Snowflake className="h-6 w-6 text-accent" />
+                    <span className="font-bold font-headline">Chill Coaching</span>
                 </Link>
               </SheetHeader>
               <div className="flex flex-col h-full px-6 pb-6">

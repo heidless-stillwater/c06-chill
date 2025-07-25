@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-bold font-headline text-lg">About Us</h3>
             <p className="text-muted-foreground text-sm">
-              Best Day Coaching is dedicated to helping you unlock your full potential and live a life that you love. We provide personalized coaching to help you achieve your goals.
+              Chill Coaching is dedicated to helping you unlock your full potential and live a life that you love. We provide personalized coaching to help you achieve your goals.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
             <Link href="#" className="hover:text-primary">Terms of Service</Link>
           </div>
           <div className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Best Day Coaching. All rights reserved.
+            © {new Date().getFullYear()} Chill Coaching. All rights reserved.
           </div>
           <div className="flex gap-4 justify-end">
             <a href="#" className="text-muted-foreground hover:text-primary"><Facebook className="h-5 w-5" /></a>

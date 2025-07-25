@@ -161,6 +161,33 @@ const spiritualServices = [
   },
 ]
 
+const testerServices = [
+  {
+    title: 'Life Balance Coaching',
+    price: '$150/session',
+    icon: Scale,
+    description: 'Feeling overwhelmed? This program helps you create harmony between your demanding career and personal life, reducing stress and increasing fulfillment.',
+    features: ['Work-life integration strategies', 'Stress management techniques', 'Mindfulness and presence training', 'Personal values alignment'],
+    href: '/services/life-balance-coaching'
+  },
+  {
+    title: 'Life Balance Coaching',
+    price: '$150/session',
+    icon: TrendingUp,
+    description: 'Feeling overwhelmed? This program helps you create harmony between your demanding career and personal life, reducing stress and increasing fulfillment.',
+    features: ['Work-life integration strategies', 'Stress management techniques', 'Mindfulness and presence training', 'Personal values alignment'],
+    href: '/services/life-balance-coaching'
+  },
+  {
+    title: 'Life Balance Coaching',
+    price: '$150/session',
+    icon: Zap,
+    description: 'Feeling overwhelmed? This program helps you create harmony between your demanding career and personal life, reducing stress and increasing fulfillment.',
+    features: ['Work-life integration strategies', 'Stress management techniques', 'Mindfulness and presence training', 'Personal values alignment'],
+    href: '/services/life-balance-coaching'
+  },
+];
+
 const ServiceCard = ({ service }: { service: { title: string, price: string, icon: React.ElementType, description: string, features: string[], href?: string }}) => (
   <Card key={service.title} className="flex flex-col overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl">
     <div className="flex justify-center items-center py-5 bg-secondary/50">
@@ -183,11 +210,11 @@ const ServiceCard = ({ service }: { service: { title: string, price: string, ico
     </CardContent>
     <CardFooter>
         {service.href ? (
-             <Button asChild className="w-full font-bold">
+             <Button asChild className="w-full font-bold text-[20px]">
                 <Link href={service.href}>Find Out More</Link>
             </Button>
         ) : (
-            <Button asChild className="w-full font-bold">
+            <Button asChild className="w-full font-bold text-[20px]">
                 <Link href="/contact">Book Now</Link>
             </Button>
         )}
@@ -208,13 +235,21 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        <Tabs defaultValue="personal" className="mt-12">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mx-auto max-w-2xl">
+        <Tabs defaultValue="tester" className="mt-12">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mx-auto max-w-3xl">
+            <TabsTrigger value="tester">Tester</TabsTrigger>
             <TabsTrigger value="personal">Personal Path</TabsTrigger>
             <TabsTrigger value="career">Career Path</TabsTrigger>
             <TabsTrigger value="skills">Skills Path</TabsTrigger>
             <TabsTrigger value="spiritual">Spiritual Path</TabsTrigger>
           </TabsList>
+          <TabsContent value="tester">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+              {testerServices.map((service, index) => (
+                <ServiceCard key={index} service={service} />
+              ))}
+            </div>
+          </TabsContent>
           <TabsContent value="personal">
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
               {personalServices.map((service) => (
